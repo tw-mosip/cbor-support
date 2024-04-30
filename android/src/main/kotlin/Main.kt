@@ -4,7 +4,6 @@ import co.nstant.`in`.cbor.CborDecoder
 import co.nstant.`in`.cbor.model.*
 import co.nstant.`in`.cbor.model.Array
 import co.nstant.`in`.cbor.model.Map
-import com.google.gson.GsonBuilder
 import org.json.JSONArray
 import org.json.JSONObject
 import java.io.ByteArrayInputStream
@@ -69,18 +68,8 @@ fun main() {
     val vcDataItemArray = CborDecoder(ByteArrayInputStream(vcDataAsCBORHex)).decode()
     val vcDataItem = vcDataItemArray[0]
 
-    val gson =  GsonBuilder()
-        .setPrettyPrinting()
-        .create()
-    val json = gson.toJson(vcDataItem)
-   /// println(json)
-
-
-    val vcDataItemToJson = vcDataItem.toJson()
-    println(vcDataItemToJson.toString())
-
-    /*val t = gson.toJson(vcDataItemToJson)
-    println(t)*/
+    val vcJsonData = vcDataItem.toJson()
+    println(vcJsonData)
 
 }
 
