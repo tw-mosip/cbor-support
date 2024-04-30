@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "cborcoding",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SomeRandomiOSDev/CBORCoding",
+      "state" : {
+        "revision" : "6fbd643c64cf6ef7a98391820c372d05fa9ed9ab",
+        "version" : "1.4.0"
+      }
+    },
+    {
+      "identity" : "half",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SomeRandomiOSDev/Half",
+      "state" : {
+        "revision" : "14b1ab35ffdf62c999ef1016ec0f8e745a6feed5",
+        "version" : "1.4.2"
+      }
+    },
+    {
+      "identity" : "swiftcbor",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/valpackett/SwiftCBOR",
+      "state" : {
+        "branch" : "master",
+        "revision" : "ec24382864e5ffc6d3915c0818745d5ab12545a8"
+      }
+    }
+  ],
+  "version" : 2
+}
